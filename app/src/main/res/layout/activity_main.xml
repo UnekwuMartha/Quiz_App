@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#51DEDEDE"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="QUIZ APP"
+            android:textAllCaps="true"
+            android:textColor="#0b0803"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/question_1_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/question_1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="1) After which American President is the capital of an African country named?"
+                android:textColor="#0b0803"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/question_1_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_1_text"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/question_2_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_1_section"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/question_2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="2) Through which country does the greater part of the Nile flow?"
+                android:textColor="#0b0803"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/question_2_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_2_text"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/question_3_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_2_section"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/question_3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="3) Two South African provinces take their names from rivers. Which are they?"
+                android:textColor="#0b0803"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/question_3_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_3_text"
+                android:inputType="text"
+                android:minHeight="32dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/question_4_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_3_section"
+            android:layout_marginBottom="36dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/question_4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="4) The Mercato is one of Africa’s largest open-air markets and is located in the city of Addis Ababa. But in which country is it?"
+                android:textColor="#0b0803"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/question_4_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_4_text"
+                android:inputType="text"
+                android:minHeight="32dp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_group_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question_4_section"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/radio_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="5) What Country has the most population in Africa?"
+                android:textColor="#0b0803"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_button_nigeria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Nigeria"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_egypt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Egypt"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group_section"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/checkbox_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingBottom="100dp"
+                android:text="6) Which of the following are rivers in Africa?"
+                android:textColor="#0b0803"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/niger_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="Niger"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/dark_sea_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="Dark Sea"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/zambezi_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="Zambezi"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/benin_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="Benin River"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/final_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/final_score_button"
+            android:layout_margin="10dp"
+            android:background="@color/black"
+            android:padding="8dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#00AA00"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/final_score_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_section"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="#9C27B0"
+            android:text="Check Total Score"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</ScrollView>
